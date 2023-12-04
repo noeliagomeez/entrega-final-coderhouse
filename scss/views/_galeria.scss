@@ -1,0 +1,121 @@
+.contenedor-logo {
+    background-color: $color-principal;
+}
+
+#imagen-logo {
+    display: flex;
+    margin:0;
+}
+
+#fotos-galeria {
+    width: 400px;
+}
+
+.contenedor-todas-galeria {
+    margin-top: 5px;
+}
+
+.contenedor-galeria-2 {
+    margin-top: 0.4%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    
+}
+.contenedor-galeria-1 {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    
+    
+}
+
+.derechos {
+    @include flex-center;
+    align-items: center;
+    color: $color-fuente-2;
+}
+
+
+/*Media Query Galeria*/
+@media only screen and (max-width: 500px) {
+    #imagen-logo {
+        display: flex;
+        margin: 0;
+    
+    }
+    .contenedor-logo {
+        height: 96px;
+    }
+    #contenedor-menu-hamburguesa {
+        margin-left: 72px;
+    }
+
+    #menu {
+        margin: 0;
+    }
+
+    #navbarNav {
+        background-color: $color-principal;
+    }
+
+    .contenedor-todas-galeria {
+        margin-left: 15%;
+        margin-right: 15%;
+        
+    } 
+     
+    #fotos-galeria {
+        margin: 1%;
+    }
+
+    .contenedor-galeria-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contenedor-galeria-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .derechos {
+        @include flex-center;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    .contenedor-todas-galeria {
+        margin-right: 10%;
+        text-align: center;
+    } 
+     
+    #fotos-galeria {
+        margin: 1%;
+    }
+    .contenedor-todas-galeria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .contenedor-galeria-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contenedor-galeria-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .derechos {
+        @include flex-center;
+    }
+}

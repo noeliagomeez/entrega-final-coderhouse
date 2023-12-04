@@ -1,0 +1,153 @@
+.contenedor-encuesta {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    margin: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+
+    .columnas {
+        margin: 1%;
+        background-color: $color-principal;
+        border: 2px solid black;
+    }
+
+    .sugerencias {
+    color: $color-principal;
+    font-weight: bold;
+    margin-left: 6px;
+
+    }
+
+    .textarea {
+        resize: none;
+        background-color: $color-principal;
+        height: 180px;
+        border: 2px solid black;
+    
+    }
+
+    .boton {
+        background-color: $color-principal;
+        margin-top: 10px;
+        margin-left: 30%;
+        margin-right: 30%;
+        border: 2px solid black;
+        
+    }
+ 
+}
+
+
+
+
+
+.titulo-contacto {
+    @include flex-center;
+    color: $color-principal;
+    text-decoration:underline;
+    margin-top: 15px
+
+}
+
+.texto-contacto {
+    color: $color-principal;
+    font-weight: bold;
+    
+}
+
+.contenedor-texto-contacto {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+.derechos {
+    @include flex-center;
+    align-items: center;
+    color: $color-fuente-2;
+}
+
+
+@media only screen and (max-width: 500px) {
+    #imagen-logo {
+        display: flex;
+        margin: 0;
+    
+    }
+    .contenedor-logo {
+        height: 96px;
+    }
+    #contenedor-menu-hamburguesa {
+        margin-left: 72px;
+    }
+
+    #menu {
+        margin: 0;
+    }
+
+    #navbarNav {
+        background-color: $color-principal;
+    }
+
+    .contenedor-encuesta {
+        display: flex;
+        width:40vw;
+        height:60vh;
+        justify-content:center;
+        align-items:center;
+
+    }
+
+    .columnas {
+        width: 250px
+
+    }
+
+    .textarea {
+        width: 250px;
+    }
+
+    .titulo-contacto {
+        margin-top:30px;
+    }
+
+    .derechos {
+        @include flex-center;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    .contenedor-encuesta {
+        display: flex;
+        width:40vw;
+        height:60vh;
+        justify-content:center;
+        align-items:center;
+
+    }
+
+    .titulo-contacto {
+        margin-top:30px;
+    }
+
+    .columnas {
+        width: 400px
+
+    }
+
+    .textarea {
+        width: 400px;
+    }
+
+    .derechos {
+        @include flex-center;
+        text-align: center;
+    }
+}
